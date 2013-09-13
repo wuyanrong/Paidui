@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name='apple-mobile-web-app-capable' content='yes' />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<title>微站</title>
+<link href="css/jquery.mobile-1.3.1.min.css" type="text/css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+<script type="text/javascript" src="js/v1.js"></script>
+</head>
+<body>
+<div id="page" data-role="page">
+  <div class="headerWrap" data-position="fixed" data-role="header" data-theme="a">
+    <a href="javascript:windowBack()" class="back1" data-icon="back" data-transition="slide">返回</a>
+    <h1>我的账户</h1>
+  </div>
+  <div class="accountWrap">
+    <div class="uregTip uregTopTip">注册用户可以将你的商家同步到云端</div>
+    <div class="accountIptWrap">
+      <div class="each">
+        <div class="name">邮箱*</div>
+        <div class="iptWrap">
+          <input placeholder="example@mail.com" data-role="none" type="text">
+        </div>
+      </div>
+      <div class="each">
+        <div class="name">密码*</div>
+        <div class="iptWrap">
+          <input placeholder="6-12位" data-role="none" type="text">
+        </div>
+      </div>
+      <div class="each">
+        <div class="name">昵称*</div>
+        <div class="iptWrap">
+          <input placeholder="10个字符之内" data-role="none" type="text">
+        </div>
+      </div>
+    </div>
+    <div class="uregTip regNeedTip">*为必填选项</div>
+    <div class="btnbg">确定</div>
+  </div>
+</div>
+</body>
+</html>
