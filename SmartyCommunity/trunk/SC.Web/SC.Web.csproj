@@ -34,6 +34,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Evt.Framework.Common">
+      <HintPath>..\Bin\Evt.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Evt.Framework.DataAccess">
+      <HintPath>..\Bin\Evt.Framework.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Evt.Framework.Mvc">
+      <HintPath>..\Bin\Evt.Framework.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages" />

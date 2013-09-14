@@ -31,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Evt.Framework.Common">
+      <HintPath>..\Bin\Evt.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Evt.Framework.DataAccess">
+      <HintPath>..\Bin\Evt.Framework.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Evt.Framework.Mvc">
+      <HintPath>..\Bin\Evt.Framework.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -51,18 +60,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Evt.Framework\Evt.Framework.Common\Evt.Framework.Common.csproj">
-      <Project>{CA656A8D-9029-4667-8FF9-F65A32F7B791}</Project>
-      <Name>Evt.Framework.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Evt.Framework\Evt.Framework.DataAccess\Evt.Framework.DataAccess.csproj">
-      <Project>{797DEFC5-6D2F-4BD0-8214-C1DFB4AD7FFD}</Project>
-      <Name>Evt.Framework.DataAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Evt.Framework\Evt.Framework.Mvc\Evt.Framework.Mvc.csproj">
-      <Project>{E1A545C0-2E2D-42CE-98D0-DDC16AD5592E}</Project>
-      <Name>Evt.Framework.Mvc</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SC.Common\SC.Common.csproj">
       <Project>{C03EAD2E-CCC2-4F85-8221-BCE7A1F00BFA}</Project>
       <Name>SC.Common</Name>

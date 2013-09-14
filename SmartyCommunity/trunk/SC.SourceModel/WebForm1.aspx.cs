@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using SC.Services.Account;
+
 using SC.Models;
 
 namespace SC.SourceModel
@@ -13,9 +13,9 @@ namespace SC.SourceModel
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AccountService.Instance.Add(new AccountDataModel() {Name="sss",Password="ddd"});
+            //AccountService.Instance.Add(new AccountDataModel() {Name="sss",Password="ddd"});
 
-            AccountService.Instance.GetModel(1);
+            //AccountService.Instance.GetModel(1);
 
         }
     }

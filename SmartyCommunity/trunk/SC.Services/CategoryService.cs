@@ -12,9 +12,9 @@ namespace SC.Services
  
         }
 
-        public List<ServiceCategoryDataModel> GetAllCategory()
+        public List<int> GetAllCategory()
         {
- 
+            return null;
         }
     }
 }
