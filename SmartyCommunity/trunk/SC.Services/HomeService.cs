@@ -7,5 +7,6 @@ namespace SC.Services
 {
     public class HomeService
     {
+
     }
 }

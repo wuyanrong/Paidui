@@ -152,6 +152,10 @@
       <Project>{B2EFB26C-0045-4EBE-9546-E7393066A462}</Project>
       <Name>SC.Controllers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SC.Models\SC.Models.csproj">
+      <Project>{A5D03830-4481-45FA-ADA1-47B1B8E5B636}</Project>
+      <Name>SC.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Mobile\Account\Main.cshtml" />
@@ -167,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="js\_notes\styles.css.mno" />
+    <Content Include="Views\Mobile\Account\Login.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
