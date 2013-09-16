@@ -1,0 +1,209 @@
+﻿@using SC.Models;
+@Model 
+@{
+    ViewBag.Title = "Detail";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        name="viewport" />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+    <meta content="telephone=yes" name="format-detection" />
+    <title>微站</title>
+    <link href="css/jquery.mobile-1.3.1.min.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="js/focus.js"></script>
+    <script type="text/javascript" src="js/v1.js"></script>
+</head>
+<body class="body">
+    <div id="page" data-role="page">
+        <div class="headerWrap" data-position="fixed" data-role="header" data-theme="a">
+            <h1>
+                智慧小区</h1>
+        </div>
+        <div class="xqNameTit">
+            金港华庭</div>
+        <div class="xqfwListWrap">
+            <div class="xqfwList">
+                <ul>
+                    @foreach (var item in collection)
+                    {
+                        <li>
+                            <div class="each a1">
+                                <div class="picWrap">
+                                    <a href="sellerList.html" data-transition="slideup">
+                                        <img src="images/xqbtn01.png">
+                                    </a>
+                                </div>
+                                <div class="name">
+                                    物业管理</div>
+                            </div>
+                        </li>
+                    }
+                    @*                    <li>
+                        <div class="each a1">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn01.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                物业管理</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a2">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn02.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                外卖</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a3">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn03.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                出租车电召</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a4">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn04.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                快递</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a5">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn05.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                洗衣</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a6">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn06.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                美容美发</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a7">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn07.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                开锁换锁</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a8">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn08.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                送水</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a9">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn09.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                搬家搬场</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a10">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn10.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                空调维修</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a11">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn11.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                卫浴售后</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a12">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn12.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                租车</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="each a13">
+                            <div class="picWrap">
+                                <a href="sellerList.html" data-transition="slideup">
+                                    <img src="images/xqbtn13.png">
+                                </a>
+                            </div>
+                            <div class="name">
+                                汽车服务</div>
+                        </div>
+                    </li>*@
+                </ul>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+        <div class="footerWrap" data-position="fixed" data-role="footer" data-theme="a">
+            <ul class="footmenu">
+                <li class="a"><a href="/Account/Detail/" data-transition="slideup">用户中心</a> </li>
+                <li class="b"><a href="myShangjiaList.html" data-transition="slideup">我的商家</a> </li>
+                <li class="c"><a href="myStoreLogin.html" data-transition="slideup">手机开店</a> </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

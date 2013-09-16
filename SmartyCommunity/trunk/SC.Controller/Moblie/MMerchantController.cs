@@ -7,7 +7,8 @@ using System.Web.Mvc;
 namespace SC.Controllers.Moblie
 {
     public class MMerchantController : Controller
-    {
+    { 
+
         /// <summary>
         /// 返回小区，对应的服务种类的所有商家
         /// </summary>

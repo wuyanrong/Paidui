@@ -8,7 +8,7 @@ using SC.Services;
 
 namespace SC.Controllers
 {
-    public class PAccountController : Controller
+    public class PAccountController : Controllers
     {
         private static ViewResultUitl _viewResult = new ViewResultUitl("PC", "Account");
         public ActionResult Add(string name, string pwd)

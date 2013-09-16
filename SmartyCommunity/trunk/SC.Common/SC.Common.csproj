@@ -64,6 +64,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\ConfigUtil.cs" />
     <Compile Include="Util\RequestUtil.cs" />
+    <Compile Include="Util\SessionUtil.cs" />
     <Compile Include="Util\ViewResultUtil.cs" />
   </ItemGroup>
   <ItemGroup>

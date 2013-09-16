@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="AccountService.cs" />
     <Compile Include="CategoryService.cs" />
+    <Compile Include="CommunityServics.cs" />
     <Compile Include="HomeService.cs" />
     <Compile Include="MerchantService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
