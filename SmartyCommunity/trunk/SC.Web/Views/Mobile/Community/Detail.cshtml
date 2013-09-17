@@ -1,0 +1,67 @@
+﻿@using SC.Models;
+@model CommunityViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "Detail";
+}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        name="viewport" />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+    <meta content="telephone=yes" name="format-detection" />
+    <title>微站</title>
+    <link href="/css/jquery.mobile-1.3.1.min.css" type="text/css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/js/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="/js/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/focus.js"></script>
+    <script type="text/javascript" src="/js/v1.js"></script>
+</head>
+<body class="body">
+    <div id="page" data-role="page">
+        <div class="headerWrap" data-position="fixed" data-role="header" data-theme="a">
+            <h1>
+                智慧小区</h1>
+        </div>
+        <div class="xqNameTit">
+            @Model.CommunityName</div>
+        <div class="xqfwListWrap">
+            <div class="xqfwList">
+                <ul>
+                    @foreach (var item in Model.ServiceCategory)
+                    {
+                        <li>
+                            <div class="each a1">
+                                <div class="picWrap">
+                                    <a href="sellerList.html" data-transition="slideup">
+                                        <img src="@("/"+item.Iconpath)">
+                                    </a>
+                                </div>
+                                <div class="name">
+                                    @item.Name</div>
+                            </div>
+                        </li>
+                    }
+                </ul>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+        <div class="footerWrap" data-position="fixed" data-role="footer" data-theme="a">
+            <ul class="footmenu">
+                <li class="a"><a href="/Account/Detail/" data-transition="slideup">用户中心</a> </li>
+                <li class="b"><a href="myShangjiaList.html" data-transition="slideup">我的商家</a> </li>
+                <li class="c"><a href="myStoreLogin.html" data-transition="slideup">手机开店</a> </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

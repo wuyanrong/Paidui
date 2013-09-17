@@ -12,12 +12,12 @@ namespace SC.Controllers.Moblie
 {
     public class MCommunityController : Controller
     {
-        private static ViewResultUitl viewResult = new ViewResultUitl("Mobile", "Account");
+        private static ViewResultUitl viewResult = new ViewResultUitl("Mobile", "Community");
 
         public ActionResult Detail(string communityId)
         {
-            CommunityDataModel model = CommunityServics.Instance.GetDetail(communityId);
-            return viewResult.View(this,"Detail");
+            CommunityViewModel model = CommunityServics.Instance.GetDetail(communityId);
+            return viewResult.View(this, "Detail", model);
         }
     }
 }

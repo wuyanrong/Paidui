@@ -173,6 +173,7 @@
     <None Include="js\_notes\styles.css.mno" />
     <Content Include="Views\Mobile\Account\Login.cshtml" />
     <Content Include="Views\Mobile\Merchant\Detail.cshtml" />
+    <Content Include="Views\Mobile\Community\Detail.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
