@@ -30,5 +30,7 @@ namespace SC.Services
             //ParameterCollection pc = new ParameterCollection("@Id", obj.Id);
             //return DbUtil.DataManager.Current.RetrieveMultiple();
         }
+
+        public Dictionary<>
     }
 }

@@ -30,7 +30,7 @@
                 我的账户</h1>
         </div>
         <form action="@(action.ToLower()=="add"?"DoAdd":"DoEdit")">
-        <input type="hidden" name="Id" value="@(string.IsNullOrEmpty(account.Id)?string.Empty:account.Id)" />
+        <input type="hidden" name="Id" value="@(string.IsNullOrEmpty(account.Id.ToString())?string.Empty:account.Id.ToString())" />
         <div class="accountWrap">
             <div class="uregTip uregTopTip">
                 注册用户可以将你的商家同步到云端</div>

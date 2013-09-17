@@ -9,14 +9,8 @@ using Evt.Framework.Common;
 
 namespace SC.Services
 {
-    public class AccountService
+    public class AccountService:BaseService<AccountService>
     {
-        private static AccountService _instance = new AccountService();
-
-        public static AccountService Instance
-        {
-            get { return _instance; }
-        }
 
         public void Register(AccountDataModel model)
         {
