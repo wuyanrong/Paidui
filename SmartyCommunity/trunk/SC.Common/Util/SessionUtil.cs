@@ -15,12 +15,12 @@ namespace SC.Common.Util
             get { return _instance; }
         }
 
-        public static string AccountId
+        public static int AccountId
         {
             get
             {
                 var obj = System.Web.HttpContext.Current.Session["AccountId"];
-                return obj == null ? string.Empty : obj.ToString();
+                return obj == null ? 0 : int.Parse(obj.ToString());
             }
         }
     }

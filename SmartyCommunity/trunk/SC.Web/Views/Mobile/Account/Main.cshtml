@@ -2,7 +2,8 @@
     SC.Models.AccountDataModel account = ViewBag.Account;
     Layout = null;
     ViewBag.Title = "Main";
-    
+    Layout = null;
+
     string action = SC.Common.Util.RequestUtil.Action;
 }
 <!DOCTYPE HTML>
@@ -29,8 +30,8 @@
             <h1>
                 我的账户</h1>
         </div>
-        <form action="@(action.ToLower()=="add"?"DoAdd":"DoEdit")">
-        <input type="hidden" name="Id" value="@(string.IsNullOrEmpty(account.Id.ToString())?string.Empty:account.Id.ToString())" />
+        <form action="@(action.ToLower() == "add" ? "DoAdd" : "DoEdit")">
+        <input type="hidden" name="Id" value="@(string.IsNullOrEmpty(account.Id.ToString()) ? string.Empty : account.Id.ToString())" />
         <div class="accountWrap">
             <div class="uregTip uregTopTip">
                 注册用户可以将你的商家同步到云端</div>

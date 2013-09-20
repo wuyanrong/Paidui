@@ -14,10 +14,10 @@ namespace SC.Controllers.Moblie
     {
         private static ViewResultUitl viewResult = new ViewResultUitl("Mobile", "Community");
 
-        public ActionResult Detail(string communityId)
+        public ActionResult Detail(string id)
         {
-            CommunityViewModel model = CommunityServics.Instance.GetDetail(communityId);
-            return viewResult.View(this, "Detail", model);
+            CommunityViewModel model = CommunityServics.Instance.GetDetail(id);
+            return viewResult.View(this,"Detail",model);
         }
     }
 }

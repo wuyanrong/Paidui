@@ -12,39 +12,39 @@ namespace SC.Controllers
 {
     public class MAccountController : Controller
     {
-        private static ViewResultUitl _viewResult = new ViewResultUitl("Mobile", "Account");
+        private static ViewResultUitl viewResult = new ViewResultUitl("Mobile", "Account");
 
 
         public ActionResult Register()
         {
             ViewBag.Account = new AccountDataModel();
-            return _viewResult.View(this, "Register");
+            return viewResult.View(this, "Register");
         }
 
         public ActionResult Login()
         {
-            return _viewResult.View(this, "Login");
+            return viewResult.View(this, "Login");
         }
 
         public ActionResult DoLogin(AccountDataModel model)
         {
             if (AccountService.Instance.Login(model))
             {
-                return _viewResult.View(this, "Main");
+                return viewResult.View(this, "Main");
             }
-            return _viewResult.View(this, "Main");
+            return viewResult.View(this, "Main");
         }
 
-        public ActionResult LoginOut(string accountId)
+        public ActionResult LoginOut(string id)
         {
-            System.Web.HttpContext.Current.Session[accountId] = string.Empty;
-            return _viewResult.View(this,"Main");
+            System.Web.HttpContext.Current.Session[id] = string.Empty;
+            return viewResult.View(this, "Main");
         }
 
         public ActionResult Add()
         {
             ViewBag.Account = new AccountDataModel();
-            return _viewResult.View(this, "Main");
+            return viewResult.View(this, "Main");
         }
 
         public ActionResult DoAdd(AccountDataModel model)
@@ -52,7 +52,7 @@ namespace SC.Controllers
             model.Mobphone = "13008862853";
             model.Createtime = DateTime.Now;
             AccountService.Instance.Create(model);
-            return _viewResult.View(this, "Main");
+            return viewResult.View(this, "Main");
         }
 
         public ActionResult AddFavoriteMerchant(string name, string phone, string comment) //Entity
@@ -61,9 +61,17 @@ namespace SC.Controllers
 
         }
 
-        public ActionResult GetFavoriteMerchant(string accountId)
+        public ActionResult GetFavoriteMerchant()
         {
+            int accountId = SessionUtil.AccountId;
             return null;
+        }
+
+        public ActionResult Detail()
+        {
+            int accountId = SessionUtil.AccountId;
+            var model = AccountService.Instance.GetModel(accountId);
+            return viewResult.View(this,"Detail",model);
         }
     }
 }
